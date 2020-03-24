@@ -1,0 +1,6 @@
+Biblioteca utilizadas para o desenvolvimento do back-end da aplicação
+
+-Express
+-Nodemon
+-Knex.js
+-SQLite

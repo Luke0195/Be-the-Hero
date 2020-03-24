@@ -1,0 +1,2 @@
+Comando para a criação do knex
+npx knex init
