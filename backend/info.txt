@@ -1,2 +1,9 @@
 Comando para a criação do knex
 npx knex init
+
+Comando para criar uma migração
+ npx knex migrate:make migration_name 
+
+comando para executar a migração
+
+  npx knex migrate: latest
