@@ -4,6 +4,11 @@ npx knex init
 Comando para criar uma migração
  npx knex migrate:make migration_name 
 
-comando para executar a migração
+Listar todos os comando da knex
+npx knex
 
+comando para executar a migração
   npx knex migrate: latest
+
+crypto -> é responsavel pela a criptografia  possui um método responsavel para cripitografar esse atributo
+rypto.randomBytes(4).toString('HEX');

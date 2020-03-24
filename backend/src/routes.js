@@ -1,21 +1,18 @@
 // Rotas da aplicação
 const express = require('express');
+
+const OngController = require('./controllers/OngController');
+
 const routes = express.Router();
 
-routes.post('/users', (request,response) => {
-  const body = request.body;
-  const {name} = request.body;
-  const {idade} = request.body
-  console.log(body);
- 
-  return response.json({
-    name,
-    idade
-  });
-});
 
-routes.get('/', (request,response) =>{
-  return response.json({messagem:'Para cima deles'});
-});
+
+
+routes.get('/ongs', OngController.index);
+
+
+routes.post('/ongs',OngController.store);
+
+
 
 module.exports= routes;
