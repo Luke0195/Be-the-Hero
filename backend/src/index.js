@@ -1,7 +1,11 @@
 const express = require('express');
+const cors = require('cors');
 const routes = require('./routes');
 
 const app = express();
+app.use(cors(
+ // origin:  Quando o projeto subir para produção
+));
 app.use(express.json());
 app.use(routes);
 

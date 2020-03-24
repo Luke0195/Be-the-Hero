@@ -25,5 +25,16 @@ module.exports ={
 
     const ongs = await connection('ongs').select('*');
     return response.json(ongs);
+  },
+
+  async show(request, response){
+    const ong = await connection('ongs').select('*').where(id=request.params);
+    return response.json(ong);
+  },
+
+  async destroy(request,response){
+    
+    const ong = await connection('ongs').delete('ongs').where(id=request.params);
+    return response.status(200);
   }
 }
